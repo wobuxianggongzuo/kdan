@@ -11,9 +11,6 @@ log_level = os.getenv("LOG_LEVEL", "INFO")
 logging.basicConfig(level=getattr(logging, log_level))
 logger = logging.getLogger(__name__)
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = os.getenv(
-    "GOOGLE_APPLICATION_CREDENTIALS"
-)
 
 # 欄位名稱對應及資料型態
 STOCK_FIELDS = {
